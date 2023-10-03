@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+<title>El Dorado</title>
+<meta property="og:type" content="website">
+<meta property="og:title" content="El Dorado">
+<meta property="og:description" content="El Dorado phiên bản DUYTDEFENCE.">
+<meta property="og:image" content="https://eldorado.asako.dev/image/intro_bg.jpg">
+<meta property="og:image:width" content="1280">
+<meta property="og:image:height" content="720">
+<link rel="apple-touch-icon" sizes="57x57" href="https://eldorado.asako.dev/images/logo.png" />
+<link rel="apple-touch-icon" sizes="60x60" href="https://eldorado.asako.dev/images/logo.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="https://eldorado.asako.dev/images/logo.png" />
+<link rel="apple-touch-icon" sizes="76x76" href="https://eldorado.asako.dev/images/logo.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="https://eldorado.asako.dev/images/logo.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="https://eldorado.asako.dev/images/logo.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="https://eldorado.asako.dev/images/logo.png" />
+<link rel="icon" type="image/png" href="https://eldorado.asako.dev/images/logo.png" sizes="192x192" />
+<link rel="icon" type="image/png" href="https://eldorado.asako.dev/images/logo.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="https://eldorado.asako.dev/images/logo.png" sizes="48x48" />
+<link rel="shortcut icon" href="favicon.png">
+<link rel="stylesheet" type="text/css" href="css/main_v1.2.80.css?35234759" />
+<link rel="stylesheet" type="text/css" href="css/kioskboard-2.3.0.min.css?489277" />
+<script language="javascript" type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js" integrity="sha512-rCjfoab9CVKOH/w/T6GbBxnAH5Azhy4+q1EXW5XEURefHbIkRbQ++ZR+GBClo3/d3q583X/gO4FKmOFuhkKrdA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script language="javascript" type="text/javascript" src="js/util_Global_v1.2.0.js?11860427"></script>
+<script language="javascript" type="text/javascript" src="js/define.js?30191881"></script>
+<script language="javascript" type="text/javascript" src="js/kr_input.js?48760022"></script>
+<script language="javascript" type="text/javascript" src="js/eldorado.min_v1.2.82.js?17378284"></script>
+<script language="javascript" type="text/javascript" src="js/check_dev.js?33327612"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<link rel="stylesheet" type="text/css" href="css/namdorado_badass.css?626682766">
+<link rel="manifest" href="/manifest.json">
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E471WLF5PT"></script>
+<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'G-E471WLF5PT');
+		</script>
+</head>
+<style>
+		body{
+			/*background: url('image/bg/intro_bg.jpg');*/
+			/*background-repeat: no-repeat;*/
+   /* 		background-size: cover;*/
+   
+            background-color:rgb(21, 21, 21);
+		}
+		
+		#LOGIN_LOADING, #KT_LOADING {
+		    background: url('image/bg/intro_bg.jpg');
+			background-repeat: no-repeat;
+    		background-size: cover;
+		}
+		
+		body.swal2-height-auto {
+		    height:100vh!important;
+		}
+		
+		#Img_LO_title {
+		    display:none;
+		}
+		
+		#AD_bg {
+		    position:fixed;
+		    width:100%;
+		    height:100%;
+		    background-image:url(https://eldorado.asako.dev/image/bg/intro_bg.jpg);
+		    background-size:100% 100%;
+		    background-position:center;
+		    background-repeat:no-repeat;
+		    pointer-events:none;
+		}
+		
+		body.disable-chat #S_CHAT_DIV {
+		    display:none!important;
+		}
+	</style>
+<body onload="S_LOGIN.onLogin();" onunload="S_LOGIN.onUnload();" onKeyDown="S_LOGIN.keyDown();" scroll="no" ondragstart="return false" draggable="false" onselectstart="return false">
+    
+    <!--<script>swal.fire('Thông báo', 'Tạm thời thì tôi sẽ đóng cửa để bảo trì nhé!', 'error');</script>-->
+
+
+<button class="btn btn-success lord lord-2" onclick="YUNO.toggle_chat();">Toggle Chat</button>
+<!-- <button class="btn btn-success lord lord-2" onclick="Swal.fire('Donate', 'Liên hệ fb để donate nha :3<br />Donate càng nhiều web càng khỏe!', 'info');">Donate</button> -->
+
+ <script>Swal.fire({title: 'Thông báo', html: 'Ra Mắt Sever Của Youtuber Zio Gaming ', icon: 'info', timer: 20000, timerProgressBar: true });</script>
+
+<div id="S_LOGIN_div"></div>
+<div id="game-body">
+<div id="div_body">
+ <div id="S_RECONNECT_div">
+<div class="reconnect-body">
+<div class="reconnect1">Bạn bị mất kết nối tới máy chủ</div>
+<div class="reconnect2">Tự động kết nối sau: <span id="reconnect-time"></span> giây</div>
+<div class="reconnect-title">Đang tiến hành kết nối lại...</div>
+</div>
+</div>
+<div id="S_LOGO_div"></div>
+<div id="S_SYNOPSIS_div"></div>
+<div id="S_MAINMENU_div"></div>
+<div id="S_ATTENDANCE_div"></div>
+<div id="S_PAYGUIDE_div"></div>
+<div id="S_SELECTMAP_div"></div>
+<div id="S_SELECTSTAGE_div"></div>
+<div id="S_RANKING_div"></div>
+<div id="S_RANKING_PVP_div"></div>
+<div id="S_MEDALPOWER_div"></div>
+<div id="S_MAKETEAM_div"></div>
+<div id="S_CLEVELUP_div"></div>
+<div id="S_CLEVELUP_COMPLETE_div"></div>
+<div id="S_EVOLUTION_COMPLETE_div"></div>
+<div id="S_UPGRADE_div"></div>
+<div id="S_UPGRADE_COMPLETE_div"></div>
+<div id="S_GACHA_div"></div>
+<div id="S_GACHA_COMPLETE_div"></div>
+<div id="S_MARKETSTORE_div"></div>
+<div id="S_EVENT_div"></div>
+<div id="S_GAME_div"></div>
+<div id="S_QUEST_div"></div>
+<div id="S_QUESTDETAIL_div"></div>
+<div id="S_TOP_LEVEL_div">
+<div class="title">TOP 50</div>
+<div class="top_level_content">
+<div class="header">
+<div class="rank">Hạng</div>
+<div class="username">Tên</div>
+<div class="level">Cấp</div>
+<div class="exp">Kinh nghiệm</div>
+</div>
+<div class="body">
+
+</div>
+</div>
+<button onclick="S_TOPLEVEL.on_hide()">Quay lại</button>
+</div>
+
+<div id="S_CHARBOOK_ALLY_div"></div>
+<div id="S_CHARBOOK_ALLY_POPUP_div"></div>
+<div id="S_CHARBOOK_ENEMY_div"></div>
+<div id="MM_top">
+<img id="Img_MM_top_levelbar">
+<img id="Img_MM_top_goldbar">
+<img id="Img_MM_top_rubybar">
+<div id="Txt_MM_top_level"></div>
+<div id="Txt_MM_top_exp"></div>
+<div id="Img_MM_top_exp_charge"> <div id="Img_MM_top_exp_progress"> </div> </div>
+<div id="Txt_MM_top_gold"></div>
+<div id="Txt_MM_top_ruby"></div>
+<img id='Img_MM_top_bonus_point'><div id='MM_top_bonus_point_div'></div>
+<img id="Img_MM_top_cloud_point">
+<div id="Txt_MM_top_cloud_point"></div>
+<a id="Img_MM_top_point" target="__blank" href="https://asako.dev">
+<div id="Txt_MM_top_point"></div>
+</a>
+</div> 
+<div id="S_USERGUIDE_div"></div>
+<div id="S_STAGECLEAR_div"></div>
+<div id="S_STAGEFAIL_div"></div>
+<div id="S_EVENTPAGE_div"></div>
+<div id="S_SETTING_div"></div>
+<div id="S_MAILBOX_div"></div>
+<div id="S_INPUT_NICKNAME_div"></div>
+<div id="S_POPUPYN_div"></div>
+<div id="S_GONGJI_div"></div>
+<div id="S_PAYMENT_CNM_div"></div>
+<div id="S_DAYDUNGEON_FAIL_div"></div>
+<div id="S_DAYDUNGEON_CLEAR_div"></div>
+<div id="S_CLOUD_RANKING_div">
+</div>
+<div id="S_EXITPOPUP_div"></div>
+<div id="effect_div">
+<canvas id="e_c_div"></canvas>
+</div>
+<div id="temp_text"></div>
+<div id="LOGLOG"></div>
+<div id="show_frame_num"></div>
+<div id="PM_here"></div>
+<div id="S_CHAT_DIV">
+<div class="chat-body">
+<div class="chat-content" onclick="S_CHAT.hide_window()">
+</div>
+<div class="chat-input">
+<input name="message" onkeydown="S_CHAT.onkeydown()" maxlength="32" maxlength="1" autocomplete="off" onfocusout="Main.onfocusout()">
+<button onclick="S_CHAT.do_send_chat()"></button>
+</div>
+</div>
+</div>
+<div id="change_username">
+<div class="body">
+<span>Đổi tên lần đầu là miễn phí, từ lần thứ 2 trở lên cần 100 RUBY</span>
+<label>Nhập tên mới</label>
+<span>Chỉ từ 6 đến 20 ký tự</span>
+<input name="username" maxlength="32" maxlength="1" autocomplete="off" onfocusout="Main.onfocusout()">
+<div class="button">
+<button class="ok" onclick="S_SETTING.on_change_name()">OK</button>
+<button class="cancel" onclick="S_SETTING.on_cancel_change_name()">Hủy</button>
+</div>
+</div>
+</div>
+<div id="message"></div>
+<div id="realtime_notice"></div>
+<div id="KT_LOADING">
+<div class="loading-body">
+<div class="loading-icon"></div>
+</div>
+</div>
+<div id="LOGIN_LOADING">
+<div class="loading-body">
+<div class="loading-icon"></div>
+</div>
+</div>
+
+</div>
+</div>
+<script type="text/javascript">
+			$("document").ready(function () {
+				$(window).resize(function () {
+					S_LOGIN.change_size();
+				});
+			});
+		</script>
+	
+<script>YUNO.check_chat();</script>
+</body>
+</html>
